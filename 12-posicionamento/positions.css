@@ -1,0 +1,35 @@
+/* quando um elemento pai tem position relative, é possível posicionar seus elementos filhos de forma absoluta dentro dele */
+main {
+    position: relative
+}
+
+/* static: elemento estático, não pode mudar de posição (não da pra usar top, bottom, left e right) */
+.p-static {
+    position: static;
+}
+
+/* relative: a princípio respeita o fluxo do elemento, mas é possível reposicionar de maneira relativa ao elemento usando top, bottom, left e right, além de que seu espaço original continua sendo ocupado. seus elementos de posicionamento são tipo margens, ou seja, colocar um top positivo empurra pra baixo e um left positivo empurra pra direita */
+.p-relative {
+    position: relative;
+    top: -1rem
+}
+
+/* absolute: sai do fluxo do documento e pode ser reposicionado livremente. seus elementos de posicionamento têm como referência a página, ou seja, top: 0 o elemento fica no topo, bottom: 0 o elemento fica no fundo  */
+.p-absolute {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+/* fixed: o elemento fica fixo na tela, mesmo rolando a página, e pode ser reposicionado. não respeita um pai position: relative. ex: chat de suporte*/
+.p-fixed {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+/* sticky: inicia na sua posição normal, mas quando começa a sair do campo de visão ele gruda em um local especificado. ex: barra de navegação */
+.p-sticky {
+    position: sticky;
+    top: 0
+}

@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 10em;
+    text-align: center;
+    background-color: aqua;
+
+    /* translateX(), translateY() ou translate(x,y): é possível mover o item na tela como se ele estivesse em um plano cartesiano. é possível usar dentro dos () medidas em px, rem, %(referente ao tamanho do elemento),...  */
+    /* rotateX(), rotateY(), rotateZ(), rotate(x, y): roda o elemento no seu próprio e se usa a unidade deg (de graus). o rotateZ() gira o elemento na tela (torna possível enclinar) */
+    /* scaleX, scaleY e scale(x, y): muda o tamanho do elemento nos eixos x e y, podendo distorcer ele. o número 1 representa 100% do tamanho original, 2 200%,.. */
+    transform: translate(100%, 100%) rotateZ(45deg) scale(1.5);
+}

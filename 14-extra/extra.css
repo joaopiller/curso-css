@@ -1,0 +1,69 @@
+/* fit content: se ajusta ao tamanho do elemento */
+button {
+    width: fit-content;
+    height: 1rem;
+}
+
+/* auto: ajusta a propriedade na maior quantidade possível 
+no exemplo abaixo, o elemento tem 2rem de margem top e bottom e a margem left e right se ajustam no máximo possível, ou seja, o elemento fica centralizado no elemento pai no eixo x */
+p {
+    margin: 2rem auto; 
+}
+
+/* box-size: border-box e content-box 
+content-box: width e height aplicam-se apenas ao conteúdo. padding e border são adicionados às dimensões totais.
+border-box: width e height incluem conteúdo, padding e border. As dimensões totais não aumentam com padding ou border.
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* object-fit: quanto um elemento, como um video ou uma foto, cobre sua região na tela
+object-position: qual regiao do objeto vai ser exibido (top, bottom, center...) */
+.video {
+    object-fit: cover;
+}
+
+/* rgba(0, 0, 0, 0.1): o quarto elemento define a transparência da cor */
+
+/* list-style
+list-style-type: define o tipo de marcador da lista(circulo, numeral,...)
+list-style-position: inside ou outside (se o marcador fica dentro do elemento ou no padding dele)
+list-style-image: define uma imagem para ser o marcador da lista */
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url();
+}
+
+/* background
+background-repeat: se ele não vai se repetir ou como vai se repetir
+background-position: qual regiao da foto, por exemplo, vai ser exibida (bottom, top..) */
+
+/* overflow (comportamento quando o conteúdo passa dos limites)
+visible: padrão, o overflow é visível
+hidden: o overflow é cortado
+scroll: cria-se uma scroll no elemento
+auto: o mesmo que o scroll, mas apenas se necessário*/
+
+/* opacity (define a opacidade do elemento) obs: 1 é 100% */
+img {
+    opacity: 0.5;
+}
+
+/* filter (aplica filtros no elemento)
+blur(px)
+brightness(%)
+contrast(%)
+(...)*/
+
+/* box-shadow: eixo x, eixo y, blur, cor */
+
+.box {
+    box-shadow: 1rem 1rem 2rem rgba(20, 116, 180, 0.25);
+}
+
+/* @media(max-width: 1px) {} ou @media(max-width: 1px) and @media(max-height: 1px) {}: estrutura condicional que só realiza as configurações css presentes dentro dos parênteses quando chega à largura ou altura especificada -> responsividade
+*/
+
+/* cursor: pointer para o cursor ficar do tipo pointer*/

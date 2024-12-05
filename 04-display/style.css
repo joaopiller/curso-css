@@ -1,0 +1,22 @@
+/* não quebra de linha, largura mínima e só aceita margem e padding horizontal */
+.inline {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* quebra de linha, largura máxima e aceita margem e padding vertical e horizontal*/
+.block {
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*não quebra linha, mas permite margem e padding vertical (sem quebrar a linha)*/
+.inline-block {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

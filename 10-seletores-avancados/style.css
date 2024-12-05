@@ -1,0 +1,34 @@
+/* seletor:nth-child() */
+li:nth-child(2) {
+    color: #f00;
+}
+
+/* múltiplos de 3 */
+li:nth-child(3n) {
+    color: #00f;
+}
+
+li:hover {
+    background-color: beige;
+}
+
+input:focus {
+    background-color: #f00;
+}
+
+/* pseudo-elementos -> ::before e ::after */
+li::before {
+    content: "(antes) ";
+    color:blueviolet
+}
+li::after {
+    content: " (depois)";
+    color:cadetblue
+}
+
+li:first-child {
+    color:yellow
+}
+li:last-child {
+    color:chocolate
+}
